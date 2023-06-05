@@ -8,7 +8,7 @@
 
 ### All steps you need to do to run this local project
 
-#### 1. Download project using Git : git clone https://github.com/haryphamdev/write-data-to-Google-Sheet-Nodejs.git
+#### 1. Download project using Git : git clone https://github.com/LocPhanFullstack/Write-data-to-Google-Sheet-with-NodeJS.git
 
 #### 2. Open your project by Visual Studio Code, run this command line at terminal (to install all packages): npm install
 
