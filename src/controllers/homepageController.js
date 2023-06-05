@@ -1,9 +1,11 @@
 import moment from 'moment';
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 
-const PRIVATE_KEY = 'YOUR-PRIVATE-KEY';
-const CLIENT_EMAIL = 'YOUR-SERVICE-EMAIL-ACCOUNT';
-const SHEET_ID = 'YOUR-SPEADSHEED-ID';
+require('dotenv').config();
+
+const PRIVATE_KEY = process.env.PRIVATE_KEY;
+const CLIENT_EMAIL = process.env.CLIENT_EMAIL;
+const SHEET_ID = process.env.SHEET_ID;
 
 let getHomepage = async (req, res) => {
     return res.render('homepage.ejs');
@@ -32,11 +34,11 @@ let getGoogleSheet = async (req, res) => {
 
         // append rows
         await sheet.addRow({
-            'Tên Facebook': 'Hỏi Dân IT',
-            Email: 'haryphamdev@gmail.com',
-            'Số điện thoại': `'0321456789`,
+            'Tên Facebook': 'Lộc Phan',
+            'Tên Email': 'phananhloc03102001@gmail.com',
+            'Số điện thoại': `'0123456789`,
             'Thời gian': formatedDate,
-            'Tên khách hàng': 'Eric',
+            'Tên khách hàng': 'LocCuTo',
         });
 
         return res.send('Writing data to Google Sheet succeeds!');

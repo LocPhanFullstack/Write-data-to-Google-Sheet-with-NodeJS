@@ -10,13 +10,13 @@
 
 #### 1. Download project using Git : git clone https://github.com/LocPhanFullstack/Write-data-to-Google-Sheet-with-NodeJS.git
 
-#### 2. Open your project by Visual Studio Code, run this command line at terminal (to install all packages): npm install
+#### 2. Open your project by Visual Studio Code, run this command line at terminal (to install all packages): npm install. After that, run (to update nodemon if error happen): npm update
 
 #### 3. Replace your PRIVATE_KEY, CLIENT_EMAIL, SHEET_ID trong file HomepageController.js (in Controllers folder)
 
 #### 4. Run project with this command line: npm start
 
-Project will run on port 8080 by default: http://localhost:8080/
+Project will run on port 8080 by default, you can config it in .env file: http://localhost:8080/
 
 Access to (write data to Google Sheet): http://localhost:8080/excel
 
